@@ -60,31 +60,19 @@ h2 {
     text-align: center;
 }
 
-/* TODO: create a media query for screens with a min-width of 800px*/
-@media(min-width:800px){
+@media (min-width: 900px) {
     .album-container p {
-        border: 5px, dashed, #EE8434;
+        border: 5px dashed #EE8434;
         width: 25%;
+    }
 
-    };
-    .album-art{
-        width:20%
-    };
+    .album-art {
+        width: 20%;
+    }
+
     .album-container {
+        display: flex;
         flex-direction: row-reverse;
         flex-wrap: wrap;
-    };
-
+    }
 }
-
-/* within that media query, change some rules 
-about the p inside the album-container div:
-- change the border to 5px, dashed, and #EE8434
-- change the width to 25%
-
-- change the album-art width to 20%
-- change the flex-direction of the 
-    album-container to row-reverse
-- change the flex-wrap of the album-container
-    to wrap
-*/
